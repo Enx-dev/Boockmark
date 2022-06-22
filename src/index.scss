@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./Styles/navbar";
+@import "./Styles//heroSection";
+@import "./Styles/features";
+@import "./Styles/Download";
+@import "./Styles//Faq";
+@import "./Styles//Footer";
+@import "./Styles//Newletter";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+@layer base {
+  .App {
+    @apply min-h-screen overflow-auto;
+  }
+}

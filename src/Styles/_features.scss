@@ -1,0 +1,54 @@
+@layer components {
+  .Features {
+    @apply py-32;
+    &_head {
+      @apply text-center space-y-4;
+      h1 {
+        @apply px-8  lg:px-0 text-veryDarkBlue text-2xl lg:text-3xl leading-heading font-medium tracking-wide;
+      }
+      p {
+        @apply text-base px-[40px]  lg:px-[20rem] text-grayishBlue leading-7;
+      }
+    }
+    &_links {
+      @apply py-10;
+      ul {
+        @apply flex flex-col items-center text-center  lg:flex-row h-40 lg:h-20 lg:justify-center lg:px-40 justify-evenly;
+        li {
+          @apply h-full flex justify-center  pt-4 border-b border-b-grayishBlue first:border-t first:border-t-grayishBlue
+        w-3/4 lg:first:border-t-0  lg:items-center;
+        }
+      }
+    }
+    &_foot {
+      @apply lg:flex py-10;
+      &-img {
+        @apply flex justify-center relative lg:w-full;
+        img {
+          @apply w-3/4 lg:w-4/5 object-cover;
+        }
+        div {
+          @apply w-[70%] rounded-r-[1000px] -z-30 absolute -bottom-9 lg:-bottom-20 left-0 h-3/4 lg:h-[80] bg-softBlue;
+        }
+      }
+      &-content {
+        @apply space-y-6 text-center lg:text-left py-16 lg:w-3/4 lg:pr-16;
+        h2 {
+          @apply px-8 lg:pr-36 lg:px-0 text-veryDarkBlue text-2xl lg:text-3xl leading-heading font-medium tracking-wide;
+        }
+        p {
+          @apply text-base px-[40px] lg:px-0 lg:pr-32 text-grayishBlue leading-7;
+        }
+        button {
+          @apply text-white  bg-softBlue 
+          py-3 text-base outline-none rounded-md px-4  shadow-md shadow-gray-400/70 
+          transition-colors ease-in-out
+           font-medium hover:border-softBlue
+          hover:border-2
+        hover:text-softBlue
+          hover:bg-transparent;
+        }
+      }
+    }
+  }
+}

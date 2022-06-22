@@ -1,0 +1,39 @@
+@layer components {
+  .HeroSection {
+    @apply lg:flex lg:flex-row-reverse lg:pl-28;
+    &_heroImg {
+      @apply w-full relative h-full;
+      img {
+        @apply left-5;
+      }
+      &-backdrop {
+        @apply w-3/4 rounded-l-[1000px] -z-30 absolute -bottom-5 right-0 h-3/4 bg-softBlue;
+      }
+    }
+    &_heroContent {
+      @apply py-8 text-center lg:relative xl:-bottom-20 lg:text-left space-y-6;
+      h1 {
+        @apply px-8 lg:pr-36 lg:px-0 text-veryDarkBlue text-3xl lg:text-4xl leading-heading font-medium tracking-wide;
+      }
+      p {
+        @apply px-[40px] lg:px-0 lg:pr-32 text-grayishBlue leading-7;
+      }
+      &-btn {
+        @apply md:space-x-4  flex flex-col space-y-4 px-8 md:flex-row md:space-y-0 md:px-0 md:justify-center
+        lg:justify-start lg:space-x-8;
+        button {
+          @apply py-3 text-base outline-none rounded-md px-4 first:bg-softBlue first:text-white shadow-md shadow-gray-400/70 last:bg-grayishBlue/10 last:text-veryDarkBlue
+          transition-colors ease-in-out
+           font-medium first:hover:border-softBlue
+          first:hover:border-2
+          first:hover:text-softBlue
+          first:hover:bg-transparent
+          last:hover:border-2
+          last:hover:border-veryDarkBlue
+          last:hover:bg-transparent
+          hover:shadow-xl;
+        }
+      }
+    }
+  }
+}

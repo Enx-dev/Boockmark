@@ -1,0 +1,35 @@
+@layer components {
+  .Navbar {
+    @apply flex items-center p-8 justify-between lg:pl-24 lg:pr-24 lg:py-10 lg:mb-20;
+    &_menuIcon {
+      @apply lg:hidden;
+    }
+    &_links {
+      @apply text-sm hidden lg:flex space-x-8 items-center  uppercase text-veryDarkBlue;
+      & > * {
+        @apply cursor-pointer;
+      }
+      &-btn {
+        @apply py-2 shadow-md uppercase shadow-gray-400/50 px-8 bg-softRed text-white rounded-md;
+      }
+    }
+    &_dropdown {
+      @apply lg:hidden fixed top-0  bottom-0 left-0 right-0 bg-veryDarkBlue/90 py-8 px-8;
+      &_head {
+        @apply flex justify-between  items-center;
+      }
+      &_body {
+        @apply flex flex-col items-center  text-white/90 text-lg font-mono h-[300px]  py-10 uppercase;
+        li {
+          @apply border-t cursor-pointer border-t-white/20 w-full flex items-center justify-center h-full tracking-widest;
+          button {
+            @apply border-2  rounded-md font-semibold w-full py-3 mt-4 text-white uppercase tracking-widest;
+          }
+        }
+      }
+      &_footer {
+        @apply flex items-center justify-center  w-full mt-28 space-x-6;
+      }
+    }
+  }
+}

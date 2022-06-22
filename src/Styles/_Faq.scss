@@ -1,0 +1,26 @@
+@layer components {
+  .Faq {
+    @apply text-center flex flex-col py-20 items-center;
+    &_top {
+      @apply py-4 space-y-4;
+      h1 {
+        @apply px-8  lg:px-0 text-veryDarkBlue text-2xl lg:text-3xl leading-heading font-medium tracking-wide;
+      }
+      p {
+        @apply text-base px-[40px]  lg:px-[20rem] xl:px-[30rem] text-grayishBlue leading-7;
+      }
+    }
+    &_accodian {
+      @apply text-left w-full py-10 max-w-2xl px-10;
+    }
+    &_Question {
+      @apply text-veryDarkBlue font-medium h-16 flex flex-row justify-between items-center;
+    }
+    &_Answer {
+      @apply py-6 text-grayishBlue leading-7;
+    }
+    button {
+      @apply px-4 py-2 bg-softBlue outline-none rounded-md shadow-md shadow-gray-400/50 text-white hover:bg-transparent hover:border-2 hover:border-softBlue hover:text-softBlue transition-colors ease-in-out;
+    }
+  }
+}

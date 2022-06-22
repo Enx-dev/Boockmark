@@ -1,0 +1,17 @@
+@layer components {
+  .Footer {
+    @apply bg-veryDarkBlue flex flex-col py-10 items-center space-y-10 lg:flex-row lg:space-y-0 lg:justify-between lg:px-8;
+    &_links {
+      @apply space-y-8 text-center lg:flex lg:space-y-0 lg:space-x-4 text-white uppercase tracking-widest;
+      & > * {
+        @apply transition-colors ease-in-out cursor-pointer hover:text-softRed;
+      }
+    }
+    &_top {
+      @apply space-y-10 lg:flex lg:space-x-8 items-center lg:space-y-0;
+    }
+    &_icons {
+      @apply flex space-x-8;
+    }
+  }
+}

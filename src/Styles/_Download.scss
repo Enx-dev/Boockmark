@@ -1,0 +1,34 @@
+@layer components {
+  .Download {
+    @apply flex flex-col text-center items-center;
+    &_head {
+      h1 {
+        @apply px-8  lg:px-0 text-veryDarkBlue text-2xl lg:text-3xl leading-heading font-medium tracking-wide;
+      }
+      p {
+        @apply text-base px-[40px]  lg:px-[20rem] text-grayishBlue leading-7;
+      }
+    }
+    &_cards {
+      @apply py-14 space-y-8 relative lg:space-y-0 lg:flex lg:space-x-8;
+    }
+  }
+  .Card {
+    @apply flex flex-col lg:h-[400px] max-w-sm lg:relative lg:last:-bottom-10 lg:first:-top-10 items-center rounded-md shadow-xl h-96 shadow-gray-400/30;
+    &_top {
+      @apply flex flex-col items-center space-y-4 py-8;
+      h1 {
+        @apply px-8  lg:px-0 text-veryDarkBlue text-2xl lg:text-3xl leading-heading font-medium tracking-wide;
+      }
+      h3 {
+        @apply text-base px-[40px]   text-grayishBlue leading-7;
+      }
+    }
+    &_footer {
+      @apply w-full h-full flex place-content-center items-center;
+    }
+    button {
+      @apply px-4 py-4 bg-softBlue outline-none rounded-md text-white hover:text-softBlue hover:border-2 hover:border-softBlue hover:bg-transparent transition-colors ease-in-out;
+    }
+  }
+}
